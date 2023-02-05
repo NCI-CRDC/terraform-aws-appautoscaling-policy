@@ -32,7 +32,7 @@ variable "policy_type" {
   default     = "TargetTrackingScaling"
 }
 
-variable "resouce_id" {
+variable "resource_id" {
   type        = string
   description = "resource type and unique identifier string for the resource associated with the scaling policy - use outputs from appautoscaling target resource"
 }

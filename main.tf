@@ -1,7 +1,7 @@
 resource "aws_appautoscaling_policy" "this" {
   name               = "${local.stack}-${var.resource_name_suffix}"
   policy_type        = var.policy_type
-  resource_id        = var.resouce_id
+  resource_id        = var.resource_id
   scalable_dimension = var.scalable_dimension
   service_namespace  = var.service_namespace
 
