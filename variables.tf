@@ -37,6 +37,11 @@ variable "resource_id" {
   description = "resource type and unique identifier string for the resource associated with the scaling policy - use outputs from appautoscaling target resource"
 }
 
+variable "resource_name_suffix" {
+  type = string 
+  description = "resource name suffix that follows the stack name"
+}
+
 variable "scalable_dimension" {
   type        = string
   description = "calable dimension of the scalable target - use outputs from appautoscaling target resource"
