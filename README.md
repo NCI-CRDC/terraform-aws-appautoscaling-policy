@@ -38,6 +38,7 @@ No modules.
 | <a name="input_predefined_metric_type"></a> [predefined\_metric\_type](#input\_predefined\_metric\_type) | the name of the pre-defined aws cloudwatch metric type to base autoscaling activities on | `string` | `"ECSServiceAverageCPUUtilization"` | no |
 | <a name="input_program"></a> [program](#input\_program) | the program associated with the application | `string` | n/a | yes |
 | <a name="input_resource_id"></a> [resource\_id](#input\_resource\_id) | resource type and unique identifier string for the resource associated with the scaling policy - use outputs from appautoscaling target resource | `string` | n/a | yes |
+| <a name="input_resource_name_suffix"></a> [resource\_name\_suffix](#input\_resource\_name\_suffix) | resource name suffix that follows the stack name | `string` | n/a | yes |
 | <a name="input_scalable_dimension"></a> [scalable\_dimension](#input\_scalable\_dimension) | calable dimension of the scalable target - use outputs from appautoscaling target resource | `string` | n/a | yes |
 | <a name="input_service_namespace"></a> [service\_namespace](#input\_service\_namespace) | aws service namespace of the scalable target - use outputs from the appautoscaling target resource | `string` | n/a | yes |
 | <a name="input_target_value"></a> [target\_value](#input\_target\_value) | target value of the metric to invoke autoscaling activity | `number` | `80` | no |
